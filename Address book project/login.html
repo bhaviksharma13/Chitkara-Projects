@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.
+    com/css?family=Lato:400,700">
+
+    <style>
+
+        #bg {
+            background-image: url("https://codehim.com/demo/login-page-with-background-image/img/background.jpg");
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            filter: blur(4px);
+            z-index: -1;
+        }
+
+        body {
+            font-family: lato, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1{
+            color: white;
+        }
+        
+        .form {
+            width: 350px;
+            position: relative
+        }
+
+        .form-field::before {
+            font-size: 20px;
+            position: absolute;
+            left: 15px;
+            top: 17px;
+            color: #888;
+            content: " ";
+            display: block;
+            background-size: cover;
+            background-repeat: no-repeat
+        }
+
+        .form-field {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        input {
+            font-family: inherit;
+            width: 100%;
+            outline: none;
+            border-radius: 10px;
+            border: none;
+            display: block;
+            padding: .9rem .7rem;
+            box-shadow: 0 2px 7px rgb(64, 64, 64);
+            font-size: 17px;
+            color: rgb(77, 77, 77);
+            text-indent: 40px
+        }
+
+        .btn {
+            border: none;
+            cursor: pointer;
+            padding: .9rem 2.5rem;
+            background-color: rgb(71, 171, 17);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 7px rgb(64, 64, 64);
+            font-size: 17px
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div id="bg"></div>
+    <div class="form">
+        <div>
+            <h1>Welcome to login page<h1>
+        </div>
+        <div class="form-field">
+            <input type="text" placeholder="Username" required id="uname" />
+        </div>
+        <div class="form-field">
+            <input type="password" placeholder="Password" required id="pass" />
+        </div>
+        <div class="form-field">
+            <button onclick="verify()" class="btn">Log in</button>
+        </div>
+    </div>
+
+    <script >
+        function verify() {
+            var uname = document.getElementById("uname").value;
+            var pass = document.getElementById("pass").value;
+
+            if (uname == "world" && pass == "123") {
+                location.assign("./index.html");
+            }
+            else if (uname=="" || pass==""){
+                window.alert("Enter username or password!");
+            }
+            else {
+                window.alert("Invalid Details!");
+            }
+        }
+    </script>
+</body>
+
+</html>

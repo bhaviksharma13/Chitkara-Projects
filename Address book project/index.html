@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Address Book</h1>
+        <div class="container-2">
+            <h2>Contacts</h2>
+            <span class="searchbox">
+                <i class="material-symbols-outlined">Search</i>
+                <input type="text" name="search" id="search" onkeyup="renderData()" placeholder="Search name" />
+            </span>
+        </div>
+        <div class="table-container">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Name</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="container-3">
+            <h2>Add new contact</h2>
+            <div>
+                <div class="box">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <div class="box">
+                    <label for="address">Address: </label>
+                    <input type="text" name="address" id="address" />
+                </div>
+                <div class="box">
+                    <label for="phone">Phone: </label>
+                    <input type="tel" name="phone" id="phone" />
+                </div>
+                <div class="box">
+                    <label for="name">Email: </label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <button onclick="addData()">Add contact</button>
+            </div>
+        </div>
+    </div>
+    <script src="project.js"></script>
+</body>
+
+</html>
