@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.section1 {
+    padding-top: 4vh !important;
+    padding: 1vh;
+    background-color: #ebecec;
+	padding-top: 2vh !important;
+}
+
+.section1 .container {
+    max-width: 1200px;
+    background: url(https://www.movebeyond.com.au/wp-content/uploads/2020/07/Beyond-icon-dark-1.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.section1 .heading1 {
+    color: #2B2E34;
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+.section1 .buttons a {
+    color: #2b2e34;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 527px) {
+    .section1 .buttons {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .section1 .buttons .btn1 a {
+        padding: 3px 10px;
+        font-size: small;
+    }
+
+    .section1 .buttons .btn2 a {
+        padding: 3px 10px;
+        font-size: small;
+    }
+}
+
+
+
+
+
+
+.container{
+    margin-top: 100px;
+    /* margin-right: 100px; */
+}
+.col-md-7{
+   margin-right: 50px;
+}
+
+.names{
+    margin-top: 50px;
+    border: 1px solid black;
+}
+.prac{
+    border: 1px solid black;
+    height:100px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(195, 198, 198, 0.491);
+    justify-content: space-between;
+}
+
+.pracname{
+    padding-left: 10px;
+    height:90px;
+    border-bottom: 1px solid  rgba(66, 66, 66, 0.721);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.prac h5{
+    margin-left: 10px;
+}
+.btn{
+    width:100px;
+    border-radius: 5px;
+    margin-right: 20px;
+    height:50px;
+}
+.moreinfo{
+    height:40px;
+    width:120px;
+    border-radius: 5px;
+     margin-right: 20px;
+     border:  1px solid  rgba(66, 66, 66, 0.721);
+}
+.hid{
+    border-bottom:1px solid  rgba(66, 66, 66, 0.721) ;
+    display: none;
+}
+.hid h6{
+    margin-left: 15px;
+}
+.call{
+    padding-top: 8px;
+    border-top: 1px solid rgba(66, 66, 66, 0.721);
+    border-bottom: 1px solid rgba(66, 66, 66, 0.721);
+}
+
+.email{
+    padding-top: 8px;
+    border-bottom: 1px solid rgba(66, 66, 66, 0.721);
+}
+
+.inp1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.reqd{
+    color: red;
+    display: none;
+}
+
+.emai input{
+    width: 80%;
+}
+
+.mess input{
+    width: 90%;
+    height:180px;
+}
+
+.submit{
+    margin-top: 20px;
+}
+
+.submit button{
+    width: 90%;
+    text-align: center;
+}
+.psub{
+    display: none;
+}
+
+
+
+
+footer {
+    background: #2b2e34;
+    color: #ffffff;
+}
+
+footer .nav-link {
+    color: #ffffff !important;
+    text-decoration:none;
+}
