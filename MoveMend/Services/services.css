@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Section1 */
+.section1 {
+    padding: 1vh;
+    background-color: #ebecec;
+}
+
+.section1 .container {
+    max-width: 1200px;
+    background: url(https://www.movebeyond.com.au/wp-content/uploads/2020/07/Beyond-icon-dark-1.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+.section1 .heading1 {
+    color: #2B2E34;
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+.section1 .buttons a {
+    color: #2b2e34;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 527px) {
+    .section1 .buttons {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .section1 .buttons .btn1 a {
+        padding: 3px 10px;
+        font-size: small;
+    }
+
+    .section1 .buttons .btn2 a {
+        padding: 3px 10px;
+        font-size: small;
+    }
+}
+
+.container {
+    margin-top: 100px;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+}
+
+#main-img img {
+    width: 100%;
+}
+
+.col-md-5 {
+    height: 450px;
+}
+
+.col-md-6 {
+    height: 450px;
+}
+
+.abc {
+    justify-content: space-evenly;
+}
+
+.imge {
+    /* background-image: url(/Services/Services-imgs/services-main.jpg); */
+    background-size: cover;
+    height: 250px;
+    width: 280px;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    transition: background-color 0.7s ease;
+}
+
+.imge:hover {
+    background-image: none;
+    background-color: #2b2e34;
+}
+
+.imge1 {
+    background-image: url(/Services/Services-imgs/Exercise-Physiology.jpg);
+}
+
+.imge2 {
+    background-image: url(/Services/Services-imgs/osteopathy.jpg);
+}
+
+.imge3 {
+    background-image: url(/Services/Services-imgs/Clinical-Pilates.jpg);
+}
+
+.imge4 {
+    background-image: url(/Services/Services-imgs/Physiotherapy.jpg);
+}
+
+.imge5 {
+    background-image: url(/Services/Services-imgs/Myotherapy.jpg);
+}
+
+.imge6 {
+    background-image: url(/Services/Services-imgs/Podiatrist.jpg);
+}
+
+.imge7 {
+    background-image: url(/Services/Services-imgs/remedial-massage.jpg);
+}
+
+.imge8 {
+    background-image: url(/Services/Services-imgs/services-main.jpg);
+}
+
+.imge h4 {
+    padding: 115px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.imge8 h4 {
+    padding: 60px;
+}
+
+@media screen and (max-width:776px) {
+    #content {
+        order: 2;
+    }
+
+    #main-img {
+        order: 1;
+    }
+
+    #main-img img {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    #main-img img {
+        width: 100%;
+    }
+}
+
+.section8 {
+    text-align: center;
+    background-color: #ebecec;
+    padding: 59.5px;
+}
+
+.section8 h5 {
+    color: #2B2E34;
+    font-size: 28px;
+}
+
+.section8 p {
+    color: #2B2E34;
+    font-size: 20px;
+    margin: 12px 0px 0px;
+}
+
+.section8 .btn {
+    margin: 24px 0px 0px;
+}
+
+.section8 .btn a {
+    background-color: #2b2e34;
+    color: white;
+    text-decoration: none;
+    padding: 7px 20px;
+    margin-right: 20px;
+    font-size: medium;
+}
+
+footer {
+    background: #2b2e34;
+    color: #ffffff;
+}
+
+footer .nav-link {
+    color: #ffffff !important;
+    text-decoration: none;
+}
